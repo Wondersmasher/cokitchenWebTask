@@ -21,7 +21,3 @@ function App() {
 }
 
 export default App;
-// what are left?
-/*
-file size 
-*/

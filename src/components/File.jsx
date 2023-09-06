@@ -94,7 +94,7 @@ const File = ({ data }) => {
           const newDate = event.toLocaleDateString("en-GB", options);
           return (
             <article
-              className="p-2 flex flex-col  shadow-md cursor-pointer my-4 relative   lg:w-[24%] md:w-[47%] w-[100%] bg-white "
+              className="p-2 flex flex-col  shadow-md cursor-pointer my-4 relative lg:w-[24%] md:w-[47%] w-[100%] bg-white rounded-md "
               key={item.id}
               onDoubleClick={() => handleDoubleClick(item.id)}
             >
