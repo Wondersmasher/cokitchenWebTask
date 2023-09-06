@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Folder = ({ data }) => {
   const navigate = useNavigate();
   return (
-    <div className="">
+    <div>
       {data[0]?.type && (
         <p className="text-[20px] font-bold ">
           Folder{data.length > 1 && "s"}: {data.length}

@@ -30,7 +30,7 @@ const File = ({ data }) => {
           File{data.length > 1 && "s"}: {data.length}
         </p>
       )}
-      <div className="flex gap-2 flex-wrap justify-stretch ">
+      <div className="flex gap-2 flex-wrap justify-stretch py-2">
         {data?.map((item) => {
           const pdf = item.name.includes("pdf");
           const svg = item.name.includes("svg");
@@ -94,7 +94,7 @@ const File = ({ data }) => {
           const newDate = event.toLocaleDateString("en-GB", options);
           return (
             <article
-              className="p-2 flex flex-col  shadow-md cursor-pointer my-4 relative lg:w-[24%] md:w-[47%] w-[100%] bg-white rounded-md "
+              className="p-2 flex flex-col  shadow-md cursor-pointer relative lg:w-[24%] md:w-[47%] w-[100%] bg-white rounded-md "
               key={item.id}
               onDoubleClick={() => handleDoubleClick(item.id)}
             >
